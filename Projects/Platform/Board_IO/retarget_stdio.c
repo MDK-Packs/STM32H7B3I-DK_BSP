@@ -16,13 +16,15 @@
  * limitations under the License.
  *
  *      Name:    retarget_stdio.c
- *      Purpose: Retarget stdio to Debug Console
+ *      Purpose: Retarget stdio to ST-Link (Virtual COM Port)
  *
  *---------------------------------------------------------------------------*/
 
 #include "stm32h7xx_hal.h"
 
-extern UART_HandleTypeDef huart1;
+#define HUARTx            huart1
+
+extern UART_HandleTypeDef HUARTx;
 
 extern int stderr_putchar (int ch);
 extern int stdout_putchar (int ch);
@@ -36,7 +38,7 @@ extern int stdin_getchar  (void);
 */
 int stderr_putchar (int ch) {
 
-  if (HAL_UART_Transmit(&huart1, (uint8_t *)&ch, 1U, 1000U) != HAL_OK) {
+  if (HAL_UART_Transmit(&HUARTx, (uint8_t *)&ch, 1U, 1000U) != HAL_OK) {
     return -1;
   }
 
@@ -51,7 +53,7 @@ int stderr_putchar (int ch) {
 */
 int stdout_putchar (int ch) {
 
-  if (HAL_UART_Transmit(&huart1, (uint8_t *)&ch, 1U, 1000U) != HAL_OK) {
+  if (HAL_UART_Transmit(&HUARTx, (uint8_t *)&ch, 1U, 1000U) != HAL_OK) {
     return -1;
   }
 
@@ -64,16 +66,16 @@ int stdout_putchar (int ch) {
   \return     The next character from the input, or -1 on read error.
 */
 int stdin_getchar (void) {
-  uint8_t           ch;
+  int ch;
   HAL_StatusTypeDef hal_stat;
 
   do {
-    hal_stat = HAL_UART_Receive(&huart1, &ch, 1U, 60000U);
+    hal_stat = HAL_UART_Receive(&HUARTx, (uint8_t *)&ch, 1U, 60000U);
   } while (hal_stat == HAL_TIMEOUT);
 
   if (hal_stat != HAL_OK) {
     return -1;
   }
 
-  return (int)ch;
+  return ch;
 }
