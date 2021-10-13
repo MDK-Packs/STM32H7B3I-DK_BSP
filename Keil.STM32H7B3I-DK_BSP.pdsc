@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <package xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="PACK.xsd" schemaVersion="1.7.2">
-  <vendor>Keil</vendor>
   <name>STM32H7B3I-DK_BSP</name>
+  <vendor>Keil</vendor>
   <description>STMicroelectronics STM32H7B3I-DK Board Support Pack</description>
   <url>https://github.com/MDK-Packs/Pack/raw/master/STM32H7B3I-DK_BSP/</url>
   <repository type="git">https://github.com/MDK-Packs/STM32H7B3I-DK_BSP.git</repository>
@@ -144,7 +144,7 @@
   </conditions>
 
   <components>
-    <bundle Cbundle="STM32H7B3I-DK" Cclass="Board Support" Cversion="1.0.0">
+    <bundle Cbundle="STM32H7B3I-DK" Cclass="Board Support" Cversion="2.3.0">
       <description>STMicroelectronics STM32H7B3I-DK Board</description>
       <doc>Documents/um2569.pdf</doc>
 
@@ -301,7 +301,7 @@
     <!-- STMicroelectronics STM32H7B3I-DK Board -->
     <board vendor="STMicroelectronics" name="STM32H7B3I-DK" revision="Rev.C"
            salesContact="https://www.st.com/content/st_com/en/contact-us.html"
-           orderForm   ="https://www.st.com/en/evaluation-tools/stm32h7b3i-dk.html#sample-buy">
+           orderForm   ="https://www.st.com/en/evaluation-tools/stm32h7b3i-dk.html">
       <description>STMicroelectronics STM32H7B3I-DK Board</description>
       <image small="Images/STM32H7B3I-DK_small.jpg" public="true"/>
       <book category="overview"  name="https://www.st.com/en/evaluation-tools/stm32h7b3i-dk.html" title="Discovery kit with STM32H7B3LI MCU"/>

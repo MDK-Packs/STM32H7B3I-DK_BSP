@@ -337,7 +337,7 @@
             <v6Rtti>0</v6Rtti>
             <VariousControls>
               <MiscControls></MiscControls>
-              <Define>VIO_LCD_DISABLE</Define>
+              <Define></Define>
               <Undefine></Undefine>
               <IncludePath></IncludePath>
             </VariousControls>
@@ -509,7 +509,11 @@
       <component Capiversion="0.1.0" Cclass="CMSIS Driver" Cgroup="VIO" Csub="Board" Cvariant="STM32H7B3I-DK" Cvendor="Keil" Cversion="1.0.0" condition="STM32H7B3-DK VIO">
         <package name="STM32H7B3I-DK_BSP" schemaVersion="1.7.2" url="https://github.com/MDK-Packs/Pack/raw/master/STM32H7B3I-DK_BSP/" vendor="Keil" version="1.0.0"/>
         <targetInfos>
-          <targetInfo name="STM32H7B3I-DK"/>
+          <targetInfo name="STM32H7B3I-DK">
+            <c>
+              <Define>VIO_LCD_DISABLE</Define>
+            </c>
+          </targetInfo>
         </targetInfos>
       </component>
       <component Cclass="Device" Cgroup="STM32Cube HAL" Csub="Common" Cvendor="Keil" Cversion="1.9.0" condition="STM32H7 HAL Common">
