@@ -20,8 +20,6 @@
   <requirements>
     <packages>
       <package vendor="Keil" name="STM32H7xx_DFP" version="2.8.1"/>
-      <package vendor="ARM"  name="CMSIS"         version="5.8.0"/>
-      <package vendor="ARM"  name="CMSIS-Driver"  version="2.6.1"/>
     </packages>
   </requirements>
 
