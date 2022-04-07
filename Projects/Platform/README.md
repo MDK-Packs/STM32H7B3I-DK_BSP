@@ -47,7 +47,6 @@ All following settings are changes to default configuration:
 | Clock                   | Setting
 |:------------------------|:----------------------------------------
 | CPU (default)           | 280 MHz
-| To LTDC (MHz)           | 9.6 MHz
 
 ### Pinout & Configuration - Connectivity
 
@@ -65,18 +64,6 @@ All following settings are changes to default configuration:
 |:------------|:---------------|:------------------------------------|:-----------------------------------
 | PH13        | UART4_TX       | Alternate Function, Speed=Very High | Arduino UNO R3 connector TX/D1 line
 | PH14        | UART4_RX       | Alternate Function, Speed=Very High | Arduino UNO R3 connector RX/D0 line
-
-### Pinout & Configuration - Timers
-
-| Peripheral   | Mode / Settings
-|:-------------|:---------------------------
-| TIM2         | Clock source=Internal Clock  
-
-### Pinout & Configuration - Multimedia
-
-| Peripheral   | Mode
-|:-------------|:---------
-| DMA2D        | Activated
 
 ### Pinout & Configuration - System Core - NVIC
 

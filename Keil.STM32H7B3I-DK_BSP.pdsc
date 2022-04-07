@@ -7,10 +7,15 @@
   <repository type="git">https://github.com/MDK-Packs/STM32H7B3I-DK_BSP.git</repository>
 
   <releases>
-    <release version="1.0.0">
+    <release version="1.0.0-rc0">
       Board description and documentation for STM32H7B3I-DK
-      Drivers:
+      Synchronize with Keil:STM32H7xx_DFP.3.0.0
+      CMSIS:
       - CMSIS-VIO driver
+      Drivers:
+      - Board Drivers, Components, Config files
+      Utilities:
+      - LCD Utility Drivers
       Example projects:
       - CMSIS-RTOS2 Blinky (verify the basic tool setup)
       - CMSIS-RTOS2 Platform (configure the board hardware)
@@ -19,7 +24,7 @@
 
   <requirements>
     <packages>
-      <package vendor="Keil" name="STM32H7xx_DFP" version="2.8.1"/>
+      <package vendor="Keil" name="STM32H7xx_DFP" version="3.0.0"/>
     </packages>
   </requirements>
 
@@ -288,9 +293,7 @@
         #define RTE_VIO_STM32H7B3I_DK
       </RTE_Components_h>
       <files>
-        <file category="header" name="Utilities/lcd/stm32_lcd.h"/>
-        <file category="source" name="Utilities/lcd/stm32_lcd.c"/>
-        <file category="source" name="Drivers/Platform/vio_STM32H7B3I-DK.c"/>
+        <file category="source" name="CMSIS/Driver/vio_STM32H7B3I-DK.c"/>
       </files>
     </component>
   </components>
@@ -303,11 +306,11 @@
       <description>STMicroelectronics STM32H7B3I-DK Board</description>
       <image small="Images/STM32H7B3I-DK_small.jpg" public="true"/>
       <book category="overview"  name="https://www.st.com/en/evaluation-tools/stm32h7b3i-dk.html" title="Discovery kit with STM32H7B3LI MCU"/>
-      <book category="overview"  name="Documents/stm32h7b3i-dk.pdf"    title="Overview"             public="true"/>
-      <book category="manual"    name="Documents/um2569.pdf"           title="User Manual"          public="true"/>
-      <book category="manual"    name="Documents/um2695.pdf"           title="User Manual - STMod+" public="true"/>
-      <book category="schematic" name="Documents/MB1332-H7B3I-C01.pdf" title="Schematics"           public="true"/>
-      <book category="schematic" name="Documents/MB1280-3V3-C01.pdf"   title="Schematics - STMod+"  public="true"/>
+      <book category="overview"  name="https://www.st.com/resource/en/data_brief/stm32h7b3i-dk.pdf" title="Overview" public="true"/>
+      <book category="manual"    name="https://www.st.com/resource/en/user_manual/um2569-discovery-kit-with-stm32h7b3li-mcu-stmicroelectronics.pdf" title="User Manual" public="true"/>
+      <book category="manual"    name="https://www.st.com/resource/en/user_manual/um2695-stmod-fanout-expansion-board-for-stm32-discovery-kits-and-evaluation-boards-stmicroelectronics.pdf" title="User Manual - STMod+" public="true"/>
+      <book category="schematic" name="https://www.st.com/resource/en/schematic_pack/mb1332-h7b3i-c01_schematic.pdf" title="Schematics" public="true"/>
+      <book category="schematic" name="https://www.st.com/resource/en/schematic_pack/mb1280-3v3-c01_schematic.pdf" title="Schematics - STMod+" public="true"/>
       <book category="other"     name="Documents/README.md"            title="Guide"                public="true"/>
       <mountedDevice    deviceIndex="0" Dvendor="STMicroelectronics:13" Dname="STM32H7B3LIHxQ"/> 
       <compatibleDevice deviceIndex="0" Dvendor="STMicroelectronics:13" DsubFamily="STM32H7B3x"/>
