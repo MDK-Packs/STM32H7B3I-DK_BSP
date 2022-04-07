@@ -556,12 +556,6 @@
           <targetInfo name="STM32H7B3I-DK"/>
         </targetInfos>
       </component>
-      <component Cbundle="STM32H7B3I-DK" Cclass="Board Support" Cgroup="Components" Csub="RK043FN48H" Cvendor="Keil" Cversion="1.0.3" condition="STM32H7B3">
-        <package name="STM32H7B3I-DK_BSP" schemaVersion="1.7.2" url="https://github.com/MDK-Packs/Pack/raw/master/STM32H7B3I-DK_BSP/" vendor="Keil" version="1.0.0"/>
-        <targetInfos>
-          <targetInfo name="STM32H7B3I-DK"/>
-        </targetInfos>
-      </component>
       <component Cbundle="STM32H7B3I-DK" Cclass="Board Support" Cgroup="Drivers" Csub="BUS" Cvendor="Keil" Cversion="2.3.0" condition="STM32H7B3I-DK BUS">
         <package name="STM32H7B3I-DK_BSP" schemaVersion="1.7.2" url="https://github.com/MDK-Packs/Pack/raw/master/STM32H7B3I-DK_BSP/" vendor="Keil" version="1.0.0"/>
         <targetInfos>
@@ -1038,11 +1032,6 @@
       <LayAsnItem>
         <LayAsnType>1</LayAsnType>
         <LayAsnName>Keil::Device:STM32Cube HAL:USART</LayAsnName>
-        <LayAsnLayerName>Board</LayAsnLayerName>
-      </LayAsnItem>
-      <LayAsnItem>
-        <LayAsnType>1</LayAsnType>
-        <LayAsnName>Keil.STM32H7B3I-DK::Board Support:Components:RK043FN48H</LayAsnName>
         <LayAsnLayerName>Board</LayAsnLayerName>
       </LayAsnItem>
     </LayAssign>
