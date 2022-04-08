@@ -7,7 +7,7 @@
   <repository type="git">https://github.com/MDK-Packs/STM32H7B3I-DK_BSP.git</repository>
 
   <releases>
-    <release version="1.0.0-rc0">
+    <release version="1.0.0" date="2022-04-08">
       Board description and documentation for STM32H7B3I-DK
       Synchronize with Keil:STM32H7xx_DFP.3.0.0
       CMSIS:
@@ -149,7 +149,7 @@
   <components>
     <bundle Cbundle="STM32H7B3I-DK" Cclass="Board Support" Cversion="2.3.0">
       <description>STMicroelectronics STM32H7B3I-DK Board</description>
-      <doc>Documents/um2569.pdf</doc>
+      <doc></doc>
 
       <!-- STM32H7B3I-DK Board board-specific components -->
       <component Cgroup="Drivers" Csub="Basic I/O" condition="STM32H7B3I-DK">
