@@ -126,6 +126,7 @@ extern void app_initialize (void);
 #define I2S6_WS_GPIO_Port GPIOA
 #define I2S6_MCK_Pin GPIO_PIN_3
 #define I2S6_MCK_GPIO_Port GPIOA
+
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */

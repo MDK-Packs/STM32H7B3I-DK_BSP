@@ -7,6 +7,12 @@
   <repository type="git">https://github.com/MDK-Packs/STM32H7B3I-DK_BSP.git</repository>
 
   <releases>
+    <release version="1.0.1-dev1">
+      Example projects:
+      - Update files generated with CubeMx
+      - Minor update to linker script (EventRecorder positioned with .bss.noinit section name)
+      - Update MPU region for SRAM (SRAM size is not 2 MB but 1 MB)
+    </release>
     <release version="1.0.1-dev0">
       CMSIS:
       - CMSIS-VIO driver

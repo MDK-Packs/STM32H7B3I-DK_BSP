@@ -72,6 +72,7 @@ extern void app_initialize (void);
 #define WAKEUP_GPIO_Port GPIOC
 #define USER_LED2_Pin GPIO_PIN_2
 #define USER_LED2_GPIO_Port GPIOG
+
 /* USER CODE BEGIN Private defines */
 
 /* USER CODE END Private defines */
