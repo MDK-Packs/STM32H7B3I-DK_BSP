@@ -1053,7 +1053,7 @@
       <LayAsnItem>
         <LayAsnType>1</LayAsnType>
         <LayAsnName>ARM::CMSIS:OS Tick:SysTick</LayAsnName>
-        <LayAsnLayerName>Board</LayAsnLayerName>
+        <LayAsnLayerName>RTOS</LayAsnLayerName>
       </LayAsnItem>
       <LayAsnItem>
         <LayAsnType>1</LayAsnType>
@@ -1078,6 +1078,16 @@
       <LayAsnItem>
         <LayAsnType>1</LayAsnType>
         <LayAsnName>ARM::CMSIS-Compiler:STDOUT:Custom</LayAsnName>
+        <LayAsnLayerName>Board</LayAsnLayerName>
+      </LayAsnItem>
+      <LayAsnItem>
+        <LayAsnType>1</LayAsnType>
+        <LayAsnName>Keil::Board Support&amp;STM32H7B3I-DK:Drivers:BUS</LayAsnName>
+        <LayAsnLayerName>Board</LayAsnLayerName>
+      </LayAsnItem>
+      <LayAsnItem>
+        <LayAsnType>1</LayAsnType>
+        <LayAsnName>Keil::Board Support&amp;STM32H7B3I-DK:Drivers:Basic I/O</LayAsnName>
         <LayAsnLayerName>Board</LayAsnLayerName>
       </LayAsnItem>
     </LayAssign>
